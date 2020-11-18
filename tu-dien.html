@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập từ bạn cần tra:<input type="text" id="demo">
+<button onclick="myFunction()">Translate!</button>
+<p id="inpt"></p>
+<script>
+    function myFunction() {
+        let inputText = demo.value;
+        let myArr = ['teacher', 'student', 'number', 'method', 'car']
+        let arr = ['giáo viên', 'học sinh', 'số', 'hàm', 'xe ô tô']
+        for (let i = 0; i < myArr.length; i++) {
+            if (inputText === myArr[i]) {
+                let x =arr[i]
+                document.getElementById('inpt').innerHTML="Nghĩa của từ bạn cần tra là:"+x;
+            } else {
+                alert('sory! my repository not have word you want to translate.');
+            }
+        }
+    }
+</script>
+</body>
+</html>
